@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.log
+.cache/
+results/
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.npy
+*.npz
+.env
+.venv/
+.vscode/
