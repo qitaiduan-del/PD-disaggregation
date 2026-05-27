@@ -6,7 +6,7 @@ decode需要TP来分担大显存，或者需要DP来分散queue
 
 # 情景设定
 ![Topology comparison](docs/images/0.png)
-这对应两种拓扑结构，我们将这两个instance分到0~7个进程，0~3为prefill, 4~7为decode。
+这对应两种拓扑结构，我们将这两个instance分到0至7个进程，0至3为prefill, 4至7为decode。
 左图的拓扑为prefill: 2TP x 2DP -> decode: 4TP x 1DP，命名为cross_tp
 右图的拓扑为prefill: 2TP x 2DP -> decode: 2TP x 2DP, 命名为aligned_lane
 我们需要看在不同情况下两者动态切换时传输情况。
